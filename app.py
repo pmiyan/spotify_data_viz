@@ -6,7 +6,8 @@ import streamlit as st
 import numpy as np
 import base64
 
-parent_folder_path  = r"C:\Users\miyan\OneDrive\Documents\my docs\Courses TAMU\Data Viz\project\years"
+cwd = os.getcwd()
+parent_folder_path  = rf"{cwd}\years"
 spotify_csv = os.path.join(parent_folder_path, "spotify_combined_data.csv")
 spotify_data = pd.read_csv(spotify_csv, parse_dates=['album_release_date'])
 st.set_page_config(page_icon=None, layout="centered")
