@@ -253,7 +253,8 @@ st.pyplot(fig)
 
 ## plot 2 -------------------------------------------------------------------------
 st.title('Audio-feaure Pairplot')
-file_path = f'{parent_folder_path}\combined_audio_features.csv'
+# file_path = f'{parent_folder_path}\combined_audio_features.csv'
+file_path = parent_folder_path / 'combined_audio_features.csv'
 df = pd.read_csv(file_path)
 features = ['tempo', 'loudness', 'danceability', 'energy', 'valence', 'acousticness', 'instrumentalness']
 df_subset = df[features]
@@ -312,7 +313,9 @@ st.pyplot(fig)
 
 
 # Load your combined artist data
-df = pd.read_csv(f'{parent_folder_path}/combined_artists.csv')
+file_path = parent_folder_path / 'combined_artists.csv'
+df = pd.read_csv(file_path)
+# df = pd.read_csv(f'{parent_folder_path}/combined_artists.csv')
 
 # Preprocessing the data for Sankey diagram
 df = df.dropna(subset=['artist_genres'])
@@ -354,9 +357,11 @@ st.title('Sankey Diagram of Top 15 Genre Popularity Across 5-Year Intervals')
 st.plotly_chart(sankey_fig)
 
 #plot 5-------------------------------------------------------------------------------------------------------------------
-df_tracks = pd.read_csv(f'{parent_folder_path}/combined_tracks.csv')
 # Convert song_duration from milliseconds to minutes
-df_tracks = pd.read_csv(f'{parent_folder_path}/combined_tracks.csv')
+# df_tracks = pd.read_csv(f'{parent_folder_path}/combined_tracks.csv')
+
+file_path = parent_folder_path / 'combined_tracks.csv'
+df_tracks = pd.read_csv(file_path)
 
 # Convert song_duration from milliseconds to minutes
 df_tracks['song_duration_min'] = df_tracks['song_duration'] / 60000
