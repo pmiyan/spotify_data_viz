@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import numpy as np
 import base64
+import plotly.graph_objects as go
 
 cwd = os.getcwd()
 parent_folder_path  = rf"{cwd}\years"
@@ -301,7 +302,7 @@ ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
 st.pyplot(fig)
 
 # plot 4 ---------------------------------------------------------------------------------------------
-import plotly.graph_objects as go
+
 
 # Load your combined artist data
 df = pd.read_csv(f'{parent_folder_path}/combined_artists.csv')
