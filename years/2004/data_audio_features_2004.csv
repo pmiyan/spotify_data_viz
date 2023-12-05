@@ -1,0 +1,9 @@
+song_id,tempo,type,loudness,mode,speechiness,liveness,valence,danceability,energy,acousticness,instrumentalness
+003vvx7Niy0yvhvHt4a68B,148.033,audio_features,-5.23,1,0.0747,0.0995,0.236,0.352,0.911,0.00121,0.0
+5SkRLpaGtvYPhw02vZhQQ9,91.03,audio_features,-4.832,0,0.484,0.139,0.434,0.657,0.734,0.149,0.0
+5rb9QrpfcKFHM1EUbSIurX,105.018,audio_features,-4.699,1,0.112,0.0388,0.583,0.894,0.791,0.0183,0.0
+561jH07mF1jHuk7KlaeF0s,84.039,audio_features,-3.798,1,0.266,0.156,0.254,0.637,0.678,0.209,0.0
+0ll8uFnc0nANY35E0Lfxvg,172.012,audio_features,-4.22,1,0.0259,0.0849,0.368,0.453,0.655,0.0794,7.61e-06
+6nTiIhLmQ3FWhvrGafw2zj,186.113,audio_features,-2.042,1,0.0639,0.368,0.769,0.38,0.988,2.64e-05,7.86e-05
+5KUNwkaNf8l5A9sXZhiCgI,95.051,audio_features,-6.827,1,0.267,0.504,0.825,0.728,0.832,0.327,0.0
+6PwjJ58I4t7Mae9xfZ9l9v,138.081,audio_features,-4.851,0,0.0836,0.101,0.689,0.497,0.97,9.04e-05,0.000674
