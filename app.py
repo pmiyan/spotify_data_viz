@@ -6,10 +6,15 @@ import streamlit as st
 import numpy as np
 import base64
 import plotly.graph_objects as go
+from pathlib import Path
 
-cwd = os.getcwd()
-parent_folder_path  = rf"{cwd}\years"
-spotify_csv = os.path.join(parent_folder_path, "spotify_combined_data.csv")
+# cwd = os.getcwd()
+# parent_folder_path  = rf"{cwd}\years"
+# spotify_csv = os.path.join(parent_folder_path, "spotify_combined_data.csv")
+cwd = Path.cwd()
+parent_folder_path = cwd / 'years'
+spotify_csv = parent_folder_path / 'spotify_combined_data.csv'
+
 spotify_data = pd.read_csv(spotify_csv, parse_dates=['album_release_date'])
 st.set_page_config(page_icon=None, layout="centered")
 st.title("Harmonizing Decades: A Musical Journey Through Spotify (1994-2023)")
