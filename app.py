@@ -207,7 +207,9 @@ st.pyplot(fig)
 
 #################### KOMAL ##################################
 #plot 1----------------------------------------------------------------------------------------------
-file_path = f'{parent_folder_path}\combined_artists.csv'
+# file_path = f'{parent_folder_path}\combined_artists.csv'
+file_path = parent_folder_path / 'combined_artists.csv'
+
 df = pd.read_csv(file_path)
 df = df.dropna(subset=['artist_genres'])
 df['artist_genres'] = df['artist_genres'].str.split(', ').explode('artist_genres')
